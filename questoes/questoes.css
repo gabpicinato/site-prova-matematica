@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(33, 139, 226);
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    padding: 16px;
+}
+
+.caixa-questao {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin-left: 20px;
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.caixa-questao ul {
+    list-style-type: none;
+    margin-left: 20px;
+    padding: 0px 0;
+}
+
+.caixa-questao ul li {
+    margin-bottom: 20px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    gap: 467%;
+    margin: 20px 9.3%;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

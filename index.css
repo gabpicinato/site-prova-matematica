@@ -8,22 +8,49 @@ body{
     font-family: Arial, sans-serif;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 h1{
     text-align: center;
-    margin-top: 0;
+    margin-top: 30px;
     padding: 16px;
 }
 
-.navigation{
+.navbar{
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
-    align-items: center;
-    padding: 8px 10px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
 }
 
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 

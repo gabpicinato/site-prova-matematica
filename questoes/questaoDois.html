@@ -22,45 +22,45 @@
         </ul>
     </nav>
 
-    <h1>Questão 1</h1>
+    <h1>Questão 2</h1>
 
     <div class="caixa-questao">
         <p>
-            Jairo possui 3 filhos. A soma das idades dos filhos de Jairo é 18 anos. O filho mais novo de Jairo tem 2 anos a menos que o filho do meio,
-            e o filho do meio tem 2 anos a menos que o filho mais velho. Qual é a idade do filho mais velho de Jairo?
+            Andressa lê 4 páginas de um livro a cada 2 minutos. A cada 40 páginas, ela faz uma pausa de 10 minutos. Em quanto tempo ela consegue terminar de ler um
+            livro de 200 páginas?
         </p>
         
         <ul>
             <li>
                 <input type="radio" name="alternativa" id="alternativa1" value="A">
-                <label for="alternativa1">A) 8 anos</label>
+                <label for="alternativa1">A) 2 horas</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa2" value="B">
-                <label for="alternativa2">B) 9 anos</label>
+                <label for="alternativa2">B) 3 horas</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa3" value="C">
-                <label for="alternativa3">C) 10 anos</label>
+                <label for="alternativa3">C) 2,5 horas</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa4" value="D">
-                <label for="alternativa4">D) 11 anos</label>
+                <label for="alternativa4">D) 4 horas</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa5" value="E">
-                <label for="alternativa5">E) 12 anos</label>
+                <label for="alternativa5">E) 1 hora</label>
             </li>
         </ul>
     </div>
 
     <div class="botoes">
         <button>
-            <a href="../index.html">Voltar</a>
+            <a href="questaoUm.html">Anterior</a>
         </button>
 
-        <button>
-            <a href="questaoDois.html">Próxima</a>
+        <button id="proxima">
+            <a href="questaoTres.html">Próxima</a>
         </button>
     </div>
 
@@ -71,7 +71,7 @@
 
         // Carregar a resposta selecionada previamente (caso exista)
         window.onload = function() {
-            const respostaSalva = localStorage.getItem('respostaQuestao1');
+            const respostaSalva = localStorage.getItem('respostaQuestao2');
             if (respostaSalva) {
                 document.getElementById(respostaSalva).checked = true;
             }
@@ -80,7 +80,7 @@
         // Adicionar evento para salvar a resposta ao clicar
         opcoes.forEach(opcao => {
             opcao.addEventListener('change', function() {
-                localStorage.setItem('respostaQuestao1', this.id);
+                localStorage.setItem('respostaQuestao2', this.id);
             });
         });
 
@@ -88,10 +88,10 @@
         proxima.addEventListener('click', function(e){
             const selecionada = document.querySelector('input[name="alternativa"]:checked');
             if (!selecionada){
-                localStorage.setItem('respostaQuestao1', '');
+                localStorage.setItem('respostaQuestao2', '');
             } 
             else{
-                localStorage.setItem('respostaQuestao1', selecionada.id);
+                localStorage.setItem('respostaQuestao2', selecionada.id);
             }
         });
     </script>
