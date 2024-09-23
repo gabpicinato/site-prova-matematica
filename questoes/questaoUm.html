@@ -32,23 +32,23 @@
         
         <ul>
             <li>
-                <input type="radio" name="alternativa" id="alternativa1" value="A">
+                <input type="radio" name="alternativa" id="A" >
                 <label for="alternativa1">A) 8 anos</label>
             </li>
             <li>
-                <input type="radio" name="alternativa" id="alternativa2" value="B">
+                <input type="radio" name="alternativa" id="B">
                 <label for="alternativa2">B) 9 anos</label>
             </li>
             <li>
-                <input type="radio" name="alternativa" id="alternativa3" value="C">
+                <input type="radio" name="alternativa" id="C">
                 <label for="alternativa3">C) 10 anos</label>
             </li>
             <li>
-                <input type="radio" name="alternativa" id="alternativa4" value="D">
+                <input type="radio" name="alternativa" id="D">
                 <label for="alternativa4">D) 11 anos</label>
             </li>
             <li>
-                <input type="radio" name="alternativa" id="alternativa5" value="E">
+                <input type="radio" name="alternativa" id="E">
                 <label for="alternativa5">E) 12 anos</label>
             </li>
         </ul>
@@ -72,6 +72,7 @@
         // Carregar a resposta selecionada previamente (caso exista)
         window.onload = function() {
             const respostaSalva = localStorage.getItem('respostaQuestao1');
+            console.log(respostaSalva);
             if (respostaSalva) {
                 document.getElementById(respostaSalva).checked = true;
             }
@@ -80,21 +81,22 @@
         // Adicionar evento para salvar a resposta ao clicar
         opcoes.forEach(opcao => {
             opcao.addEventListener('change', function() {
-                localStorage.setItem('respostaQuestao1', this.value);
+                console.log(this.id);    
+                localStorage.setItem('respostaQuestao1', this.id);
                 localStorage.setItem('ultimaQuestao', 'questaoUm.html');
             });
         });
 
         // Quando o usuário clicar para ir à próxima questão, salvar a resposta e ir à próxima página
-        proxima.addEventListener('click', function(e){
-            const selecionada = document.querySelector('input[name="alternativa"]:checked');
-            if (!selecionada){
-                localStorage.setItem('respostaQuestao1', '');
-            } 
-            else{
-                localStorage.setItem('respostaQuestao1', selecionada.value);
-            }
-        });
+        // proxima.addEventListener('click', function(e){
+        //     const selecionada = document.querySelector('input[name="alternativa"]:checked');
+        //     if (!selecionada){
+        //         localStorage.setItem('respostaQuestao1', '');
+        //     } 
+        //     else{
+        //         localStorage.setItem('respostaQuestao1', selecionada.id);
+        //     }
+        // });
     </script>
 
 </body>

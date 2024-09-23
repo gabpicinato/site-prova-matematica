@@ -33,23 +33,23 @@
         
         <ul>
             <li>
-                <input type="radio" name="alternativa" id="alternativa1" value="A">
+                <input type="radio" name="alternativa" id="A">
                 <label for="alternativa1">A) 7471 algarismos</label>
             </li>
             <li>
-                <input type="radio" name="alternativa" id="alternativa2" value="B">
+                <input type="radio" name="alternativa" id="B">
                 <label for="alternativa2">B) 7477 algarismos</label>
             </li>
             <li>
-                <input type="radio" name="alternativa" id="alternativa3" value="C">
+                <input type="radio" name="alternativa" id="C">
                 <label for="alternativa3">C) 7481 algarismos</label>
             </li>
             <li>
-                <input type="radio" name="alternativa" id="alternativa4" value="D">
+                <input type="radio" name="alternativa" id="D">
                 <label for="alternativa4">D) 7484 algarismos</label>
             </li>
             <li>
-                <input type="radio" name="alternativa" id="alternativa5" value="E">
+                <input type="radio" name="alternativa" id="E">
                 <label for="alternativa5">E) 7493 algarismos</label>
             </li>
         </ul>
@@ -81,21 +81,21 @@
         // Adicionar evento para salvar a resposta ao clicar
         opcoes.forEach(opcao => {
             opcao.addEventListener('change', function() {
-                localStorage.setItem('respostaQuestao4', this.value);
+                localStorage.setItem('respostaQuestao4', this.id);
                 localStorage.setItem('ultimaQuestao', 'questaoQuatro.html');
             });
         });
 
         // Quando o usuário clicar para ir à próxima questão, salvar a resposta e ir à próxima página
-        proxima.addEventListener('click', function(e){
-            const selecionada = document.querySelector('input[name="alternativa"]:checked');
-            if (!selecionada){
-                localStorage.setItem('respostaQuestao4', '');
-            } 
-            else{
-                localStorage.setItem('respostaQuestao4', selecionada.value);
-            }
-        });
+        // proxima.addEventListener('click', function(e){
+        //     const selecionada = document.querySelector('input[name="alternativa"]:checked');
+        //     if (!selecionada){
+        //         localStorage.setItem('respostaQuestao4', '');
+        //     } 
+        //     else{
+        //         localStorage.setItem('respostaQuestao4', selecionada.id);
+        //     }
+        // });
     </script>
 
 </body>

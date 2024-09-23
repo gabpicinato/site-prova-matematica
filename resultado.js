@@ -37,3 +37,7 @@ window.onload = function() {
 
     notaElemento.textContent = `Nota: ${nota}/10`;
 }
+
+function resetarDados(){
+    localStorage.clear();
+}
