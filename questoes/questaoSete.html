@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiciTest</title>
+    <link rel="stylesheet" href="questoes.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../sobre.html">Sobre</a>
+            </li>
+            <li>
+                <a href="../contato.html">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Questão 7</h1>
+
+    <div class="caixa-questao">
+        <p>
+            Para um casamento, a noiva convidou 30 pessoas, e o noivo convidou 25 pessoas. Sabendo que cada convidado da noiva convidou mais 3 pessoas, e cada convidado do noivo
+            convidou mais 2 pessoas, quantos bolos serão necessários para servir todos os convidados? Leve em consideração que cada bolo serve 40 pessoas.
+        </p>
+        
+        <ul>
+            <li>
+                <input type="radio" name="alternativa" id="alternativa1" value="A">
+                <label for="alternativa1">A) 3 bolos</label>
+            </li>
+            <li>
+                <input type="radio" name="alternativa" id="alternativa2" value="B">
+                <label for="alternativa2">B) 4 bolos</label>
+            </li>
+            <li>
+                <input type="radio" name="alternativa" id="alternativa3" value="C">
+                <label for="alternativa3">C) 5 bolos</label>
+            </li>
+            <li>
+                <input type="radio" name="alternativa" id="alternativa4" value="D">
+                <label for="alternativa4">D) 6 bolos</label>
+            </li>
+            <li>
+                <input type="radio" name="alternativa" id="alternativa5" value="E">
+                <label for="alternativa5">E) 7 bolos</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="botoes">
+        <button>
+            <a href="questaoSeis.html">Anterior</a>
+        </button>
+
+        <button id="proxima">
+            <a href="questaoOito.html">Próxima</a>
+        </button>
+    </div>
+
+    <script>
+        // Salvar a resposta no localStorage quando uma opção for selecionada
+        const opcoes = document.querySelectorAll('input[name="alternativa"]');
+        const proxima = document.getElementById('proxima');
+
+        // Carregar a resposta selecionada previamente (caso exista)
+        window.onload = function() {
+            const respostaSalva = localStorage.getItem('respostaQuestao7');
+            if (respostaSalva) {
+                document.getElementById(respostaSalva).checked = true;
+            }
+        };
+
+        // Adicionar evento para salvar a resposta ao clicar
+        opcoes.forEach(opcao => {
+            opcao.addEventListener('change', function() {
+                localStorage.setItem('respostaQuestao7', this.value);
+                localStorage.setItem('ultimaQuestao', 'questaoSete.html');
+            });
+        });
+
+        // Quando o usuário clicar para ir à próxima questão, salvar a resposta e ir à próxima página
+        proxima.addEventListener('click', function(e){
+            const selecionada = document.querySelector('input[name="alternativa"]:checked');
+            if (!selecionada){
+                localStorage.setItem('respostaQuestao7', '');
+            } 
+            else{
+                localStorage.setItem('respostaQuestao7', selecionada.value);
+            }
+        });
+    </script>
+
+</body>
+</html>

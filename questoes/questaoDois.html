@@ -80,7 +80,7 @@
         // Adicionar evento para salvar a resposta ao clicar
         opcoes.forEach(opcao => {
             opcao.addEventListener('change', function() {
-                localStorage.setItem('respostaQuestao2', this.id);
+                localStorage.setItem('respostaQuestao2', this.value);
                 localStorage.setItem('ultimaQuestao', 'questaoDois.html');
             });
         });
@@ -92,7 +92,7 @@
                 localStorage.setItem('respostaQuestao2', '');
             } 
             else{
-                localStorage.setItem('respostaQuestao2', selecionada.id);
+                localStorage.setItem('respostaQuestao2', selecionada.value);
             }
         });
     </script>

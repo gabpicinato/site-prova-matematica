@@ -26,8 +26,8 @@
 
     <div class="caixa-questao">
         <p>
-            Arlindo precisa cortar uma barra de ferro de 390 metros e uma tábua de madeira de 480 metros em pedaços de tamanhos iguais. Sabendo que Arlindo quer 
-            o máximo de pedaços possíveis e que não devem haver sobras, quantos pedaços Arlindo terá ao final de todos os cortes?
+            Arlindo precisa cortar uma barra de ferro de 390 metros e uma tábua de madeira de 480 metros em pedaços de tamanhos iguais, com cada pedaço tendo o maior comprimento possível.
+            Sabendo que não devem haver sobras, quantos pedaços Arlindo terá ao final de todos os cortes?
         </p>
         
         <ul>
@@ -80,7 +80,7 @@
         // Adicionar evento para salvar a resposta ao clicar
         opcoes.forEach(opcao => {
             opcao.addEventListener('change', function() {
-                localStorage.setItem('respostaQuestao6', this.id);
+                localStorage.setItem('respostaQuestao6', this.value);
                 localStorage.setItem('ultimaQuestao', 'questaoSeis.html');
             });
         });
@@ -92,7 +92,7 @@
                 localStorage.setItem('respostaQuestao6', '');
             } 
             else{
-                localStorage.setItem('respostaQuestao6', selecionada.id);
+                localStorage.setItem('respostaQuestao6', selecionada.value);
             }
         });
     </script>

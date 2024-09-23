@@ -71,21 +71,17 @@ p {
 .botoes {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    align-items: center;
     margin: 20px 9.3%;
 }
 
 .botoes button {
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: black;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#proxima {
-    margin-left: 460%;
 }
 
 a {

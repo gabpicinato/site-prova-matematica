@@ -22,46 +22,45 @@
         </ul>
     </nav>
 
-    <h1>Questão 4</h1>
+    <h1>Questão 10</h1>
 
     <div class="caixa-questao">
         <p>
-            Alberto precisa escrever os números das páginas de um livro. Sabendo que esse livro possui 2147 páginas, quantos algarismos Alberto precisará escrever para enumerar 
-            todas as páginas, de 1 a 2147?  
-
+            Hugo está assistindo um filme de 130 minutos de duração. Quando Hugo começou a assistir, ele viu 3/5 do filme e após isso dormiu até o minuto 122 de filme.
+            Quanto tempo Hugo dormiu durante o filme?
         </p>
         
         <ul>
             <li>
                 <input type="radio" name="alternativa" id="alternativa1" value="A">
-                <label for="alternativa1">A) 7471 algarismos</label>
+                <label for="alternativa1">A) 44 minutos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa2" value="B">
-                <label for="alternativa2">B) 7477 algarismos</label>
+                <label for="alternativa2">B) 50 minutos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa3" value="C">
-                <label for="alternativa3">C) 7481 algarismos</label>
+                <label for="alternativa3">C) 52 minutos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa4" value="D">
-                <label for="alternativa4">D) 7484 algarismos</label>
+                <label for="alternativa4">D) 61 minutos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa5" value="E">
-                <label for="alternativa5">E) 7493 algarismos</label>
+                <label for="alternativa5">E) 78 minutos</label>
             </li>
         </ul>
     </div>
 
     <div class="botoes">
         <button>
-            <a href="questaoTres.html">Anterior</a>
+            <a href="questaoNove.html">Anterior</a>
         </button>
 
         <button id="proxima">
-            <a href="questaoCinco.html">Próxima</a>
+            <a href="../resultado.html">Finalizar</a>
         </button>
     </div>
 
@@ -72,7 +71,7 @@
 
         // Carregar a resposta selecionada previamente (caso exista)
         window.onload = function() {
-            const respostaSalva = localStorage.getItem('respostaQuestao4');
+            const respostaSalva = localStorage.getItem('respostaQuestao10');
             if (respostaSalva) {
                 document.getElementById(respostaSalva).checked = true;
             }
@@ -81,8 +80,8 @@
         // Adicionar evento para salvar a resposta ao clicar
         opcoes.forEach(opcao => {
             opcao.addEventListener('change', function() {
-                localStorage.setItem('respostaQuestao4', this.value);
-                localStorage.setItem('ultimaQuestao', 'questaoQuatro.html');
+                localStorage.setItem('respostaQuestao10', this.value);
+                localStorage.setItem('ultimaQuestao', 'questaoDez.html');
             });
         });
 
@@ -90,10 +89,10 @@
         proxima.addEventListener('click', function(e){
             const selecionada = document.querySelector('input[name="alternativa"]:checked');
             if (!selecionada){
-                localStorage.setItem('respostaQuestao4', '');
+                localStorage.setItem('respostaQuestao10', '');
             } 
             else{
-                localStorage.setItem('respostaQuestao4', selecionada.value);
+                localStorage.setItem('respostaQuestao10', selecionada.value);
             }
         });
     </script>

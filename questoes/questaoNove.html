@@ -22,46 +22,46 @@
         </ul>
     </nav>
 
-    <h1>Questão 4</h1>
+    <h1>Questão 9</h1>
 
     <div class="caixa-questao">
         <p>
-            Alberto precisa escrever os números das páginas de um livro. Sabendo que esse livro possui 2147 páginas, quantos algarismos Alberto precisará escrever para enumerar 
-            todas as páginas, de 1 a 2147?  
-
+            Um celular custa R$1.200,00 à vista. Se for parcelado em 12 vezes, o valor de cada parcela será de R$ 120,00. Caso o cliente seja assinante de um plano de fidelidade, 
+            ele terá um desconto de 5% no valor final da compra. Quantos reais o consumidor pagará a mais do que o valor à vista se optar por parcelar o celular em 12 vezes, sendo
+            assinante do plano de fidelidade?  
         </p>
         
         <ul>
             <li>
                 <input type="radio" name="alternativa" id="alternativa1" value="A">
-                <label for="alternativa1">A) 7471 algarismos</label>
+                <label for="alternativa1">A) 150 reais</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa2" value="B">
-                <label for="alternativa2">B) 7477 algarismos</label>
+                <label for="alternativa2">B) 168 reais</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa3" value="C">
-                <label for="alternativa3">C) 7481 algarismos</label>
+                <label for="alternativa3">C) 180 reais</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa4" value="D">
-                <label for="alternativa4">D) 7484 algarismos</label>
+                <label for="alternativa4">D) 210 reais</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa5" value="E">
-                <label for="alternativa5">E) 7493 algarismos</label>
+                <label for="alternativa5">E) 240 reais</label>
             </li>
         </ul>
     </div>
 
     <div class="botoes">
         <button>
-            <a href="questaoTres.html">Anterior</a>
+            <a href="questaoOito.html">Anterior</a>
         </button>
 
         <button id="proxima">
-            <a href="questaoCinco.html">Próxima</a>
+            <a href="questaoDez.html">Próxima</a>
         </button>
     </div>
 
@@ -72,7 +72,7 @@
 
         // Carregar a resposta selecionada previamente (caso exista)
         window.onload = function() {
-            const respostaSalva = localStorage.getItem('respostaQuestao4');
+            const respostaSalva = localStorage.getItem('respostaQuestao9');
             if (respostaSalva) {
                 document.getElementById(respostaSalva).checked = true;
             }
@@ -81,8 +81,8 @@
         // Adicionar evento para salvar a resposta ao clicar
         opcoes.forEach(opcao => {
             opcao.addEventListener('change', function() {
-                localStorage.setItem('respostaQuestao4', this.value);
-                localStorage.setItem('ultimaQuestao', 'questaoQuatro.html');
+                localStorage.setItem('respostaQuestao9', this.value);
+                localStorage.setItem('ultimaQuestao', 'questaoNove.html');
             });
         });
 
@@ -90,10 +90,10 @@
         proxima.addEventListener('click', function(e){
             const selecionada = document.querySelector('input[name="alternativa"]:checked');
             if (!selecionada){
-                localStorage.setItem('respostaQuestao4', '');
+                localStorage.setItem('respostaQuestao9', '');
             } 
             else{
-                localStorage.setItem('respostaQuestao4', selecionada.value);
+                localStorage.setItem('respostaQuestao9', selecionada.value);
             }
         });
     </script>
