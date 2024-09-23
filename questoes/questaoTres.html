@@ -22,45 +22,46 @@
         </ul>
     </nav>
 
-    <h1>Questão 2</h1>
+    <h1>Questão 3</h1>
 
     <div class="caixa-questao">
         <p>
-            Andressa lê 4 páginas de um livro a cada 2 minutos. A cada 40 páginas, ela faz uma pausa de 10 minutos. Em quanto tempo ela consegue terminar de ler um
-            livro de 200 páginas?
+            Robert precisa levar até o seu apartamento do quinto andar quinze pacotes de 20kg cada. No elevador desse prédio, a cada andar que você precisa subir ou descer, 
+            10 segundos se passam. Considerando que Robert tem 80kg e a carga máxima do elevador é de 200kg, quanto tempo Robert ficará dentro do elevador para carregar todos os pacotes?
+
         </p>
         
         <ul>
             <li>
                 <input type="radio" name="alternativa" id="alternativa1" value="A">
-                <label for="alternativa1">A) 2 horas</label>
+                <label for="alternativa1">A) 150 segundos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa2" value="B">
-                <label for="alternativa2">B) 3 horas</label>
+                <label for="alternativa2">B) 200 segundos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa3" value="C">
-                <label for="alternativa3">C) 2,5 horas</label>
+                <label for="alternativa3">C) 225 segundos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa4" value="D">
-                <label for="alternativa4">D) 4 horas</label>
+                <label for="alternativa4">D) 250 segundos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa5" value="E">
-                <label for="alternativa5">E) 1 hora</label>
+                <label for="alternativa5">E) 300 segundos</label>
             </li>
         </ul>
     </div>
 
     <div class="botoes">
         <button>
-            <a href="questaoUm.html">Anterior</a>
+            <a href="questaoDois.html">Anterior</a>
         </button>
 
         <button id="proxima">
-            <a href="questaoTres.html">Próxima</a>
+            <a href="questaoQuatro.html">Próxima</a>
         </button>
     </div>
 
@@ -71,7 +72,7 @@
 
         // Carregar a resposta selecionada previamente (caso exista)
         window.onload = function() {
-            const respostaSalva = localStorage.getItem('respostaQuestao2');
+            const respostaSalva = localStorage.getItem('respostaQuestao3');
             if (respostaSalva) {
                 document.getElementById(respostaSalva).checked = true;
             }
@@ -80,8 +81,8 @@
         // Adicionar evento para salvar a resposta ao clicar
         opcoes.forEach(opcao => {
             opcao.addEventListener('change', function() {
-                localStorage.setItem('respostaQuestao2', this.id);
-                localStorage.setItem('ultimaQuestao', 'questaoDois.html');
+                localStorage.setItem('respostaQuestao3', this.id);
+                localStorage.setItem('ultimaQuestao', 'questaoTres.html');
             });
         });
 
@@ -89,10 +90,10 @@
         proxima.addEventListener('click', function(e){
             const selecionada = document.querySelector('input[name="alternativa"]:checked');
             if (!selecionada){
-                localStorage.setItem('respostaQuestao2', '');
+                localStorage.setItem('respostaQuestao3', '');
             } 
             else{
-                localStorage.setItem('respostaQuestao2', selecionada.id);
+                localStorage.setItem('respostaQuestao3', selecionada.id);
             }
         });
     </script>

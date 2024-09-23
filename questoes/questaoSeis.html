@@ -22,45 +22,45 @@
         </ul>
     </nav>
 
-    <h1>Questão 2</h1>
+    <h1>Questão 6</h1>
 
     <div class="caixa-questao">
         <p>
-            Andressa lê 4 páginas de um livro a cada 2 minutos. A cada 40 páginas, ela faz uma pausa de 10 minutos. Em quanto tempo ela consegue terminar de ler um
-            livro de 200 páginas?
+            Arlindo precisa cortar uma barra de ferro de 390 metros e uma tábua de madeira de 480 metros em pedaços de tamanhos iguais. Sabendo que Arlindo quer 
+            o máximo de pedaços possíveis e que não devem haver sobras, quantos pedaços Arlindo terá ao final de todos os cortes?
         </p>
         
         <ul>
             <li>
                 <input type="radio" name="alternativa" id="alternativa1" value="A">
-                <label for="alternativa1">A) 2 horas</label>
+                <label for="alternativa1">A) 25 pedaços</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa2" value="B">
-                <label for="alternativa2">B) 3 horas</label>
+                <label for="alternativa2">B) 26 pedaços</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa3" value="C">
-                <label for="alternativa3">C) 2,5 horas</label>
+                <label for="alternativa3">C) 27 pedaços</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa4" value="D">
-                <label for="alternativa4">D) 4 horas</label>
+                <label for="alternativa4">D) 28 pedaços</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa5" value="E">
-                <label for="alternativa5">E) 1 hora</label>
+                <label for="alternativa5">E) 29 pedaços</label>
             </li>
         </ul>
     </div>
 
     <div class="botoes">
         <button>
-            <a href="questaoUm.html">Anterior</a>
+            <a href="questaoCinco.html">Anterior</a>
         </button>
 
         <button id="proxima">
-            <a href="questaoTres.html">Próxima</a>
+            <a href="questaoSete.html">Próxima</a>
         </button>
     </div>
 
@@ -71,7 +71,7 @@
 
         // Carregar a resposta selecionada previamente (caso exista)
         window.onload = function() {
-            const respostaSalva = localStorage.getItem('respostaQuestao2');
+            const respostaSalva = localStorage.getItem('respostaQuestao6');
             if (respostaSalva) {
                 document.getElementById(respostaSalva).checked = true;
             }
@@ -80,8 +80,8 @@
         // Adicionar evento para salvar a resposta ao clicar
         opcoes.forEach(opcao => {
             opcao.addEventListener('change', function() {
-                localStorage.setItem('respostaQuestao2', this.id);
-                localStorage.setItem('ultimaQuestao', 'questaoDois.html');
+                localStorage.setItem('respostaQuestao6', this.id);
+                localStorage.setItem('ultimaQuestao', 'questaoSeis.html');
             });
         });
 
@@ -89,10 +89,10 @@
         proxima.addEventListener('click', function(e){
             const selecionada = document.querySelector('input[name="alternativa"]:checked');
             if (!selecionada){
-                localStorage.setItem('respostaQuestao2', '');
+                localStorage.setItem('respostaQuestao6', '');
             } 
             else{
-                localStorage.setItem('respostaQuestao2', selecionada.id);
+                localStorage.setItem('respostaQuestao6', selecionada.id);
             }
         });
     </script>

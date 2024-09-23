@@ -92,15 +92,12 @@ h2{
 
 button{
     display: block;
-    margin: 50px auto;
+    margin: 30px auto;
     font-size: 18px;
     background-color: rgb(0, 0, 0);
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-.botao{
     color: white;
 }

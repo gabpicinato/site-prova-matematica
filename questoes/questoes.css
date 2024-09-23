@@ -72,7 +72,6 @@ p {
     display: flex;
     justify-content: space-between;
     width: 300px;
-    gap: 467%;
     margin: 20px 9.3%;
 }
 
@@ -83,6 +82,10 @@ p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#proxima {
+    margin-left: 460%;
 }
 
 a {

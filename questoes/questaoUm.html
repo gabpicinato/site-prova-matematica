@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="questoes.css">
 </head>
 
-<body>
+<body numquestao="Um">
     <nav class="navbar">
         <ul>
             <li>
@@ -55,12 +55,12 @@
     </div>
 
     <div class="botoes">
-        <button>
-            <a href="../index.html">Voltar</a>
+        <button id="anterior"> 
+            <a href="../index.html"> Anterior </a>
         </button>
 
-        <button>
-            <a href="questaoDois.html">Próxima</a>
+        <button id="proxima"> 
+            <a href="questaoDois.html"> Próxima </a>
         </button>
     </div>
 
@@ -81,6 +81,7 @@
         opcoes.forEach(opcao => {
             opcao.addEventListener('change', function() {
                 localStorage.setItem('respostaQuestao1', this.id);
+                localStorage.setItem('ultimaQuestao', 'questaoUm.html');
             });
         });
 

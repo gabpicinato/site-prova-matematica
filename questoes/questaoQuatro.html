@@ -22,45 +22,46 @@
         </ul>
     </nav>
 
-    <h1>Questão 2</h1>
+    <h1>Questão 4</h1>
 
     <div class="caixa-questao">
         <p>
-            Andressa lê 4 páginas de um livro a cada 2 minutos. A cada 40 páginas, ela faz uma pausa de 10 minutos. Em quanto tempo ela consegue terminar de ler um
-            livro de 200 páginas?
+            Alberto precisa escrever os números das páginas de um livro. Sabendo que esse livro possui 2147 páginas, quantos algarismos Alberto precisará escrever para enumerar 
+            todas as páginas, de 1 a 2147?  
+
         </p>
         
         <ul>
             <li>
                 <input type="radio" name="alternativa" id="alternativa1" value="A">
-                <label for="alternativa1">A) 2 horas</label>
+                <label for="alternativa1">A) 7471 algarismos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa2" value="B">
-                <label for="alternativa2">B) 3 horas</label>
+                <label for="alternativa2">B) 7477 algarismos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa3" value="C">
-                <label for="alternativa3">C) 2,5 horas</label>
+                <label for="alternativa3">C) 7481 algarismos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa4" value="D">
-                <label for="alternativa4">D) 4 horas</label>
+                <label for="alternativa4">D) 7484 algarismos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="alternativa5" value="E">
-                <label for="alternativa5">E) 1 hora</label>
+                <label for="alternativa5">E) 7493 algarismos</label>
             </li>
         </ul>
     </div>
 
     <div class="botoes">
         <button>
-            <a href="questaoUm.html">Anterior</a>
+            <a href="questaoTres.html">Anterior</a>
         </button>
 
         <button id="proxima">
-            <a href="questaoTres.html">Próxima</a>
+            <a href="questaoCinco.html">Próxima</a>
         </button>
     </div>
 
@@ -71,7 +72,7 @@
 
         // Carregar a resposta selecionada previamente (caso exista)
         window.onload = function() {
-            const respostaSalva = localStorage.getItem('respostaQuestao2');
+            const respostaSalva = localStorage.getItem('respostaQuestao4');
             if (respostaSalva) {
                 document.getElementById(respostaSalva).checked = true;
             }
@@ -80,8 +81,8 @@
         // Adicionar evento para salvar a resposta ao clicar
         opcoes.forEach(opcao => {
             opcao.addEventListener('change', function() {
-                localStorage.setItem('respostaQuestao2', this.id);
-                localStorage.setItem('ultimaQuestao', 'questaoDois.html');
+                localStorage.setItem('respostaQuestao4', this.id);
+                localStorage.setItem('ultimaQuestao', 'questaoQuatro.html');
             });
         });
 
@@ -89,10 +90,10 @@
         proxima.addEventListener('click', function(e){
             const selecionada = document.querySelector('input[name="alternativa"]:checked');
             if (!selecionada){
-                localStorage.setItem('respostaQuestao2', '');
+                localStorage.setItem('respostaQuestao4', '');
             } 
             else{
-                localStorage.setItem('respostaQuestao2', selecionada.id);
+                localStorage.setItem('respostaQuestao4', selecionada.id);
             }
         });
     </script>
