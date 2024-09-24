@@ -5,7 +5,7 @@ Este projeto é um **teste matemático interativo** projetado para desafiar e en
 ## Motivações
 A principal motivação desse projeto é o fato de minha irmã estar se preparando para o concurso do Colégio Militar de Curitiba. Dessa forma, me interessei em desenvolver um ambiente interativo com questões matemáticas que ajudam no processo de aprendizagem, treinando e desenvolvendo o raciocínio lógico e a interpretação de questões.
 
-## Tecnologias Usadas
+## Linguagens de Programação Utilizadas
 
 - **HTML**: Para estruturar a página.
 - **CSS**: Para estilizar a página e melhorar a aparência visual.
