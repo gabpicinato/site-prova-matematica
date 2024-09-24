@@ -3,7 +3,7 @@
 Este projeto é um **teste matemático interativo** projetado para desafiar e encorajar a realização de questões matemáticas que envolvem contas e interpretação. O objetivo é oferecer uma experiência desafiadora e de treinamento, permitindo que os usuários testem suas habilidades e possam desenvolver interesse em matemática.
 
 ## Motivações
-A principal motivação desse projeto é o fato de minha irmã estar se preparando para o concurso do Colégio Militar de Curitiba. Dessa forma, me interessei em desenvolver um ambiente interativo com questões matemáticas que ajudam no processo de aprendizagem.
+A principal motivação desse projeto é o fato de minha irmã estar se preparando para o concurso do Colégio Militar de Curitiba. Dessa forma, me interessei em desenvolver um ambiente interativo com questões matemáticas que ajudam no processo de aprendizagem, treinando e desenvolvendo o raciocínio lógico e a interpretação de questões.
 
 ## Tecnologias Usadas
 
