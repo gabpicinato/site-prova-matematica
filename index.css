@@ -39,7 +39,6 @@ h1{
 
 .navbar ul li {
     display: inline;
-    margin-right: 20px;
 }
 
 .navbar ul li a {
@@ -90,6 +89,22 @@ h2{
     line-height: 1.6;
 }
 
+.caixa-questao {
+    background-color: white;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin-left: 20px;
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: justify;
+}
+
 button{
     display: block;
     margin: 30px auto;
@@ -100,4 +115,14 @@ button{
     border-radius: 4px;
     cursor: pointer;
     color: white;
+}
+
+.contato {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.link-git{
+    color: rgb(44, 219, 250);
+    text-decoration: underline;
 }

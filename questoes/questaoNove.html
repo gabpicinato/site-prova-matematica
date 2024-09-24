@@ -34,23 +34,23 @@
         <ul>
             <li>
                 <input type="radio" name="alternativa" id="A">
-                <label for="alternativa1">A) 150 reais</label>
+                <label for="A">A) 150 reais</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="B">
-                <label for="alternativa2">B) 168 reais</label>
+                <label for="B">B) 168 reais</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="C">
-                <label for="alternativa3">C) 180 reais</label>
+                <label for="C">C) 180 reais</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="D">
-                <label for="alternativa4">D) 210 reais</label>
+                <label for="D">D) 210 reais</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="E">
-                <label for="alternativa5">E) 240 reais</label>
+                <label for="E">E) 240 reais</label>
             </li>
         </ul>
     </div>
@@ -68,7 +68,6 @@
     <script>
         // Salvar a resposta no localStorage quando uma opção for selecionada
         const opcoes = document.querySelectorAll('input[name="alternativa"]');
-        const proxima = document.getElementById('proxima');
 
         // Carregar a resposta selecionada previamente (caso exista)
         window.onload = function() {
@@ -85,17 +84,6 @@
                 localStorage.setItem('ultimaQuestao', 'questaoNove.html');
             });
         });
-
-        // Quando o usuário clicar para ir à próxima questão, salvar a resposta e ir à próxima página
-        // proxima.addEventListener('click', function(e){
-        //     const selecionada = document.querySelector('input[name="alternativa"]:checked');
-        //     if (!selecionada){
-        //         localStorage.setItem('respostaQuestao9', '');
-        //     } 
-        //     else{
-        //         localStorage.setItem('respostaQuestao9', selecionada.id);
-        //     }
-        // });
     </script>
 
 </body>

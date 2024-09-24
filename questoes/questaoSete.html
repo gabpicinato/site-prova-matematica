@@ -33,23 +33,23 @@
         <ul>
             <li>
                 <input type="radio" name="alternativa" id="A">
-                <label for="alternativa1">A) 3 bolos</label>
+                <label for="A">A) 3 bolos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="B">
-                <label for="alternativa2">B) 4 bolos</label>
+                <label for="B">B) 4 bolos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="C">
-                <label for="alternativa3">C) 5 bolos</label>
+                <label for="C">C) 5 bolos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="D">
-                <label for="alternativa4">D) 6 bolos</label>
+                <label for="D">D) 6 bolos</label>
             </li>
             <li>
                 <input type="radio" name="alternativa" id="E">
-                <label for="alternativa5">E) 7 bolos</label>
+                <label for="E">E) 7 bolos</label>
             </li>
         </ul>
     </div>
@@ -67,7 +67,6 @@
     <script>
         // Salvar a resposta no localStorage quando uma opção for selecionada
         const opcoes = document.querySelectorAll('input[name="alternativa"]');
-        const proxima = document.getElementById('proxima');
 
         // Carregar a resposta selecionada previamente (caso exista)
         window.onload = function() {
@@ -84,17 +83,6 @@
                 localStorage.setItem('ultimaQuestao', 'questaoSete.html');
             });
         });
-
-        // Quando o usuário clicar para ir à próxima questão, salvar a resposta e ir à próxima página
-        // proxima.addEventListener('click', function(e){
-        //     const selecionada = document.querySelector('input[name="alternativa"]:checked');
-        //     if (!selecionada){
-        //         localStorage.setItem('respostaQuestao7', '');
-        //     } 
-        //     else{
-        //         localStorage.setItem('respostaQuestao7', selecionada.id);
-        //     }
-        // });
     </script>
 
 </body>
