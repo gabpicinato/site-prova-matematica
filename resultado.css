@@ -49,6 +49,14 @@ a{
     text-decoration: none;
 }
 
+#mensagem-resultado {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+
 main{
     margin-top: 200px;
     text-align: center;
