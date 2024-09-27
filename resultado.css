@@ -50,11 +50,11 @@ a{
 }
 
 #mensagem-resultado {
-    font-size: 30px;
+    font-size: 32px;
 }
 
 p {
-    font-size: 30px;
+    font-size: 32px;
 }
 
 main{
@@ -68,7 +68,7 @@ h1 {
 
 button {
     background-color: black;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-inline-start: 30px;
     margin-inline-end: 30px;
     color: white;
